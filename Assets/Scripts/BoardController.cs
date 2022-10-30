@@ -61,6 +61,26 @@ public class BoardController : MonoBehaviour
             Array.Reverse(copied);
             boardCells[m] = copied;
         }
+
+        // 初期配置の表示
+        StatusUpdate();
+    }
+
+    private void StatusUpdate()
+    {
+        for (int m = 1; m < boardCondition.Length; m++)
+        {
+            if(!(m == BOARD_SIZE + 1))
+            {
+                for (int n = 1; n < boardCondition[m].Length; n++)
+                {
+                    if(!(n == BOARD_SIZE + 1))
+                    {
+                        boardCells[m - 1][n - 1].ViewUpdate(boardCondition[m][n]);
+                    }
+                }
+            }
+        }
     }
 
     public void PutStone(RaycastHit hit)　// 石を置く
