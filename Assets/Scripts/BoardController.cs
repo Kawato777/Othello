@@ -84,7 +84,6 @@ public class BoardController : MonoBehaviour
         boardCondition[5][4] = BLACK;
         StatusUpdate(); // 見た目を変更
         SetMovablePosAndDir();    // 黒の動ける場所を判定
-        
     }
 
     private void StatusUpdate()
@@ -115,7 +114,14 @@ public class BoardController : MonoBehaviour
             if (CheckPuttingStone(hitCell))
             {
                 // 実際に石を置く(ひっくり返せるやつも)
-                FlipStone(hitCell);
+                if (movableDir[hitCell.cellPlace.x][hitCell.cellPlace.y] != 0)
+                {
+                    FlipStone(hitCell);
+                }
+                else
+                {
+                    Debug.Log("思っている動きではない");
+                }
             }
             else
             {
@@ -134,8 +140,120 @@ public class BoardController : MonoBehaviour
     {
         // 石を置く
         boardCondition[hitCell.cellPlace.x][hitCell.cellPlace.y] = currentColor;
-
         // 石を裏返す
+        // 置いた石のmovableDirをセット
+        int dir = movableDir[hitCell.cellPlace.x][hitCell.cellPlace.y];
+        if(dir == 0)
+        {
+            Debug.Log(movablePos[hitCell.cellPlace.x][hitCell.cellPlace.y]);
+            Debug.Log("おかしい");
+            return;
+        }
+
+        int x = hitCell.cellPlace.x;
+        int y = hitCell.cellPlace.y;
+
+        // 左
+        if((dir & LEFT) == LEFT)
+        {
+            int x_tmp = x + 1;
+            while(boardCondition[x_tmp][y] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x_tmp][y] = currentColor;
+                x_tmp++;
+            }
+        }
+
+        // 左上
+        if ((dir & UPPER_LEFT) == UPPER_LEFT)
+        {
+            int x_tmp = x + 1;
+            int y_tmp = y - 1;
+
+            while (boardCondition[x_tmp][y_tmp] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x_tmp][y_tmp] = currentColor;
+                x_tmp++;
+                y_tmp--;
+            }
+        }
+
+        // 上
+        if ((dir & UPPER) == UPPER)
+        {
+            int y_tmp = y - 1;
+
+            while (boardCondition[x][y_tmp] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x][y_tmp] = currentColor;
+                y_tmp--;
+            }
+        }
+
+        // 右上
+        if ((dir & UPPER_RIGHT) == UPPER_RIGHT)
+        {
+            int x_tmp = x - 1;
+            int y_tmp = y - 1;
+
+            while (boardCondition[x_tmp][y_tmp] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x_tmp][y_tmp] = currentColor;
+                x_tmp--;
+                y_tmp--;
+            }
+        }
+
+        // 右
+        if ((dir & RIGHT) == RIGHT)
+        {
+            int x_tmp = x - 1;
+            while (boardCondition[x_tmp][y] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x_tmp][y] = currentColor;
+                x_tmp--;
+            }
+        }
+
+        // 右下
+        if ((dir & LOWER_RIGHT) == LOWER_RIGHT)
+        {
+            int x_tmp = x - 1;
+            int y_tmp = y + 1;
+
+            while (boardCondition[x_tmp][y_tmp] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x_tmp][y_tmp] = currentColor;
+                x_tmp--;
+                y_tmp++;
+            }
+        }
+
+        // 下
+        if ((dir & LOWER) == LOWER)
+        {
+            int y_tmp = y + 1;
+
+            while (boardCondition[x][y_tmp] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x][y_tmp] = currentColor;
+                y_tmp++;
+            }
+        }
+
+        // 左下
+        if ((dir & LOWER_LEFT) == LOWER_LEFT)
+        {
+            int x_tmp = x + 1;
+            int y_tmp = y + 1;
+
+            while (boardCondition[x_tmp][y_tmp] == -currentColor)    // ひっくり返し続ける
+            {
+                boardCondition[x_tmp][y_tmp] = currentColor;
+                x_tmp++;
+                y_tmp++;
+            }
+        }
 
         StatusUpdate();
         currentColor *= -1;
@@ -145,7 +263,6 @@ public class BoardController : MonoBehaviour
     // 石を置けるかどうかを確かめる関数
     private bool CheckPuttingStone(BoardCell hitCell)
     {
-        Debug.Log(movableDir[hitCell.cellPlace.x][hitCell.cellPlace.y]);
         // 選択したマスがEMPTYであるか
         if (hitCell.status != EMPTY)
         {
@@ -170,7 +287,7 @@ public class BoardController : MonoBehaviour
                     movableDir[m][n] = dir;
                     continue;
                 }
-                // 左
+                // 右
                 if(boardCondition[m - 1][n] == -currentColor)   // その方向に相手の石があるとき
                 {
                     int x_tmp = m - 2;
@@ -185,11 +302,11 @@ public class BoardController : MonoBehaviour
                     // 相手の石を挟んで自分の石があればdirを更新
                     if(boardCondition[x_tmp][y_tmp] == currentColor)
                     {
-                        dir = dir | LEFT;
+                        dir = dir | RIGHT;
                     }
                 }
 
-                // 左上
+                // 右上
                 if (boardCondition[m - 1][n - 1] == -currentColor)   // その方向に相手の石があるとき
                 {
                     int x_tmp = m - 2;
@@ -205,7 +322,7 @@ public class BoardController : MonoBehaviour
                     // 相手の石を挟んで自分の石があればdirを更新
                     if (boardCondition[x_tmp][y_tmp] == currentColor)
                     {
-                        dir = dir | UPPER_LEFT;
+                        dir = dir | UPPER_RIGHT;
                     }
                 }
 
@@ -228,7 +345,7 @@ public class BoardController : MonoBehaviour
                     }
                 }
 
-                // 右上
+                // 左上
                 if (boardCondition[m + 1][n - 1] == -currentColor)   // その方向に相手の石があるとき
                 {
                     int x_tmp = m + 2;
@@ -244,11 +361,11 @@ public class BoardController : MonoBehaviour
                     // 相手の石を挟んで自分の石があればdirを更新
                     if (boardCondition[x_tmp][y_tmp] == currentColor)
                     {
-                        dir |= UPPER_RIGHT;
+                        dir |= UPPER_LEFT;
                     }
                 }
 
-                // 右
+                // 左
                 if (boardCondition[m + 1][n] == -currentColor)   // その方向に相手の石があるとき
                 {
                     int x_tmp = m + 2;
@@ -263,11 +380,11 @@ public class BoardController : MonoBehaviour
                     // 相手の石を挟んで自分の石があればdirを更新
                     if (boardCondition[x_tmp][y_tmp] == currentColor)
                     {
-                        dir |= RIGHT;
+                        dir |= LEFT;
                     }
                 }
 
-                // 右下
+                // 左下
                 if (boardCondition[m + 1][n + 1] == -currentColor)   // その方向に相手の石があるとき
                 {
                     int x_tmp = m + 2;
@@ -283,7 +400,7 @@ public class BoardController : MonoBehaviour
                     // 相手の石を挟んで自分の石があればdirを更新
                     if (boardCondition[x_tmp][y_tmp] == currentColor)
                     {
-                        dir |= LOWER_RIGHT;
+                        dir |= LOWER_LEFT;
                     }
                 }
 
@@ -306,7 +423,7 @@ public class BoardController : MonoBehaviour
                     }
                 }
 
-                // 左下
+                // 右下
                 if (boardCondition[m - 1][n + 1] == -currentColor)   // その方向に相手の石があるとき
                 {
                     int x_tmp = m - 2;
@@ -322,7 +439,7 @@ public class BoardController : MonoBehaviour
                     // 相手の石を挟んで自分の石があればdirを更新
                     if (boardCondition[x_tmp][y_tmp] == currentColor)
                     {
-                        dir |= LOWER_LEFT;
+                        dir |= LOWER_RIGHT;
                     }
                 }
 
