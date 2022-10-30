@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoardCell : MonoBehaviour
 {
-    public Vector2 cellPlace;
+    public Vector2Int cellPlace;
     public int status = 0;
 
     // ƒ}ƒX‚Ìó‘Ô
