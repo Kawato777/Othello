@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
-    [SerializeField] GameController gameController;
+    [SerializeField] BoardController boardController;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class MouseController : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit)) // Ray‚ð“ŠŽË
             {
-                gameController.PutStone(hit);
+                boardController.PutStone(hit);
             }
         }
     }

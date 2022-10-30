@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BoardCell : MonoBehaviour
 {
+    public Vector2 cellPlace;
+
     // Start is called before the first frame update
     void Start()
     {
