@@ -53,7 +53,14 @@ public class BoardController : MonoBehaviour
         boardCondition[5][4] = BLACK;
 
         // ƒZƒ‹î•ñ‚Ìæ“¾
-        
+        BoardCell[] boardCells_getting = cellsObj.GetComponentsInChildren<BoardCell>();
+        for (int m = 0; m < boardCells.Length; m++)
+        {
+            BoardCell[] copied = new BoardCell[BOARD_SIZE];
+            Array.Copy(boardCells_getting, m * 8, copied, 0, BOARD_SIZE);
+            Array.Reverse(copied);
+            boardCells[m] = copied;
+        }
     }
 
     public void PutStone(RaycastHit hit)@// Î‚ğ’u‚­

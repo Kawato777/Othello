@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 1}
+  status: 0
 --- !u!1 &334718982975584947
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 8}
+  status: 0
 --- !u!1 &475123316355002271
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 3}
+  status: 0
 --- !u!1 &514339398331192862
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 3}
+  status: 0
 --- !u!1 &588221448365714749
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 6}
+  status: 0
 --- !u!1 &607501579717499098
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 4}
+  status: 0
 --- !u!1 &720294192770139558
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 5}
+  status: 0
 --- !u!1 &903253733012219868
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 3}
+  status: 0
 --- !u!1 &920660778335840500
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,6 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 7}
+  status: 0
 --- !u!1 &999066123255662548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 8}
+  status: 0
 --- !u!1 &1210166772940218139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 6}
+  status: 0
 --- !u!1 &1309186847406956409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,6 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 5}
+  status: 0
 --- !u!1 &1805785816318402033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,6 +1627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 1}
+  status: 0
 --- !u!1 &1826847597351670959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 3}
+  status: 0
 --- !u!1 &1904612421202747821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +1851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 6}
+  status: 0
 --- !u!1 &1940852476520023816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,6 +2135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 1}
+  status: 0
 --- !u!1 &2231740847520656644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 3}
+  status: 0
 --- !u!1 &2715258975528450914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,6 +2359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 2}
+  status: 0
 --- !u!1 &2781767061762908733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,6 +2572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 1}
+  status: 0
 --- !u!1 &3201274655081901840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +2856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 6}
+  status: 0
 --- !u!1 &3417481345387867829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 8}
+  status: 0
 --- !u!1 &3544423271328606028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,6 +3424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 8}
+  status: 0
 --- !u!1 &3597523518456358459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 8}
+  status: 0
 --- !u!1 &4061340498082192658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,6 +3915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 6}
+  status: 0
 --- !u!1 &4839696142585320176
 GameObject:
   m_ObjectHideFlags: 0
@@ -4003,6 +4027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 7}
+  status: 0
 --- !u!1 &4976141507041401479
 GameObject:
   m_ObjectHideFlags: 0
@@ -4114,6 +4139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 2}
+  status: 0
 --- !u!1 &5106440276868049698
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,6 +4423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 6}
+  status: 0
 --- !u!1 &5121901385602716554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4508,6 +4535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 4}
+  status: 0
 --- !u!1 &5196456965484051578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4619,6 +4647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 4}
+  status: 0
 --- !u!1 &5218309087007545440
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +4759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 7}
+  status: 0
 --- !u!1 &5218672024710778342
 GameObject:
   m_ObjectHideFlags: 0
@@ -4841,6 +4871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 5}
+  status: 0
 --- !u!1 &5230631332720121936
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,6 +4983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 1}
+  status: 0
 --- !u!1 &5406831320935033200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5063,6 +5095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 8}
+  status: 0
 --- !u!1 &5436027684481562249
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,6 +5379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 2}
+  status: 0
 --- !u!1 &5498863260315029819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5457,6 +5491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 2}
+  status: 0
 --- !u!1 &5532024636184682506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,6 +5603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 1}
+  status: 0
 --- !u!1 &5542671246827343673
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +5715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 4}
+  status: 0
 --- !u!1 &5657466333550525911
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,6 +5999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 4}
+  status: 0
 --- !u!1 &5950463705824930275
 GameObject:
   m_ObjectHideFlags: 0
@@ -6073,6 +6111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 7}
+  status: 0
 --- !u!1 &6363939385406357712
 GameObject:
   m_ObjectHideFlags: 0
@@ -6184,6 +6223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 5, y: 4}
+  status: 0
 --- !u!1 &6377426662051305610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6295,6 +6335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 7}
+  status: 0
 --- !u!1 &6408903489273059557
 GameObject:
   m_ObjectHideFlags: 0
@@ -6406,6 +6447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 6}
+  status: 0
 --- !u!1 &6461792038565345940
 GameObject:
   m_ObjectHideFlags: 0
@@ -6517,6 +6559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 4}
+  status: 0
 --- !u!1 &6564584889351133424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6628,6 +6671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 5}
+  status: 0
 --- !u!1 &6587428968070241416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,6 +6783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 2}
+  status: 0
 --- !u!1 &6604262365610708407
 GameObject:
   m_ObjectHideFlags: 0
@@ -6850,6 +6895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 1}
+  status: 0
 --- !u!1 &6781995443606047262
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,6 +7007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 3}
+  status: 0
 --- !u!1 &6854200579654940435
 GameObject:
   m_ObjectHideFlags: 0
@@ -7072,6 +7119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 2}
+  status: 0
 --- !u!1 &7238900381778432827
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,6 +7231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 6}
+  status: 0
 --- !u!1 &7256499498385977092
 GameObject:
   m_ObjectHideFlags: 0
@@ -7294,6 +7343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 1}
+  status: 0
 --- !u!1 &7270893829256211707
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,6 +7455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 5}
+  status: 0
 --- !u!1 &7295470213005726697
 GameObject:
   m_ObjectHideFlags: 0
@@ -7516,6 +7567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 2, y: 3}
+  status: 0
 --- !u!1 &7383096828097024778
 GameObject:
   m_ObjectHideFlags: 0
@@ -7627,6 +7679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 4, y: 8}
+  status: 0
 --- !u!1 &7399539923406022906
 GameObject:
   m_ObjectHideFlags: 0
@@ -7910,6 +7963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 2}
+  status: 0
 --- !u!1 &7522078968592090584
 GameObject:
   m_ObjectHideFlags: 0
@@ -8021,6 +8075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 6, y: 7}
+  status: 0
 --- !u!1 &7529362377862798924
 GameObject:
   m_ObjectHideFlags: 0
@@ -8476,6 +8531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 5}
+  status: 0
 --- !u!1 &7678826101122905103
 GameObject:
   m_ObjectHideFlags: 0
@@ -8759,6 +8815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 4}
+  status: 0
 --- !u!1 &7780394136096949099
 GameObject:
   m_ObjectHideFlags: 0
@@ -9216,6 +9273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 7, y: 5}
+  status: 0
 --- !u!1 &8158083806437360576
 GameObject:
   m_ObjectHideFlags: 0
@@ -9327,6 +9385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 7}
+  status: 0
 --- !u!1 &8172590572295543228
 GameObject:
   m_ObjectHideFlags: 0
@@ -9438,6 +9497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 1, y: 3}
+  status: 0
 --- !u!1 &8268644610894515629
 GameObject:
   m_ObjectHideFlags: 0
@@ -9549,6 +9609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 8, y: 8}
+  status: 0
 --- !u!1 &8317527410375349970
 GameObject:
   m_ObjectHideFlags: 0
@@ -9857,6 +9918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5853c68101bbad3418a21e4383ecd148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cellsObj: {fileID: 4061340498082192658}
 --- !u!1 &8908829387511819454
 GameObject:
   m_ObjectHideFlags: 0
@@ -9968,6 +10030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 2}
+  status: 0
 --- !u!1 &9037394889767996889
 GameObject:
   m_ObjectHideFlags: 0
@@ -10079,6 +10142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 5}
+  status: 0
 --- !u!1 &9101019183143708258
 GameObject:
   m_ObjectHideFlags: 0
@@ -10190,3 +10254,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cellPlace: {x: 3, y: 7}
+  status: 0
