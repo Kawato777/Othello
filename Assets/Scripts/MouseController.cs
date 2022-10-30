@@ -18,8 +18,7 @@ public class MouseController : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) // ¶ƒNƒŠƒbƒN
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // Ray‚ğ¶¬
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit)) // Ray‚ğ“ŠË
+            if (Physics.Raycast(ray, out RaycastHit hit)) // Ray‚ğ“ŠË
             {
                 boardController.PutStone(hit);
             }

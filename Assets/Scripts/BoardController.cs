@@ -21,6 +21,9 @@ public class BoardController : MonoBehaviour
     BoardCell[][] boardCells = new BoardCell[BOARD_SIZE][];
     [SerializeField] GameObject cellsObj;
 
+    // 試合情報
+    int currentColor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +67,9 @@ public class BoardController : MonoBehaviour
 
         // 初期配置の表示
         StatusUpdate();
+
+        // 試合情報の設定
+        currentColor = BLACK;
     }
 
     private void StatusUpdate()
@@ -87,7 +93,41 @@ public class BoardController : MonoBehaviour
     {
         // test
         // Debug.Log(hit.collider.GetComponent<BoardCell>().cellPlace);
-        // 石を置けるかどうか
-        // 実際に石を置く
+        if (hit.collider.CompareTag("Cell"))
+        {
+            BoardCell hitCell = hit.collider.GetComponent<BoardCell>();
+            // 石を置けるかどうか
+            if (CheckPuttingStone(hitCell))
+            {
+                // 実際に石を置く
+                boardCondition[(int)hitCell.cellPlace.x][9 - (int)hitCell.cellPlace.y] = currentColor;
+                StatusUpdate();
+                currentColor *= -1;
+            }
+            else
+            {
+                // 石が置けない
+                Debug.Log("そこには置けません");
+            }
+        }
+        else
+        {
+            // マスを選択していない
+            Debug.Log("マスを選択してください。");
+        }
+    }
+
+    // 石を置けるかどうかを確かめる関数
+    private bool CheckPuttingStone(BoardCell hitCell)
+    {
+        // 選択したマスがEMPTYであるか
+        if(!(hitCell.status == EMPTY))
+        {
+            return false;
+        }
+
+        // 選択したマスをひっくり返せるか
+
+        return true;
     }
 }

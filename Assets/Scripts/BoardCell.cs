@@ -26,12 +26,6 @@ public class BoardCell : MonoBehaviour
         stoneObj.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // Œ©‚½–Ú‚Ì•ÏX
     public void ViewUpdate(int sentStatus)
     {
